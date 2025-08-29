@@ -1,3 +1,5 @@
+
+```mermaid
 sequenceDiagram
     participant U as User
     participant VSE as VS Code Extension
