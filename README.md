@@ -4,7 +4,7 @@ flowchart TD
     A[VS Code] --> B[Gateway]
 
     B -->|Logs| C[Checker]
-    B -->|User Query (UQ)| D[Coder]
+    B -->|User Query | D[Coder]
     B -->|Human Feedback Response| E[Coder]
 
     C -->|Logs Good| F[Success]
