@@ -7,33 +7,23 @@ flowchart TD
     %% Gateway
     A --> B[Gateway]
 
-    %% Inputs from VS Code to Gateway
-    B -->|Logs| C[Checker]
-    B -->|User Query | D[Coder]
-    B -->|Human Feedback Response| E[Coder]
+    %% Main inputs from Gateway
+    B --> C[Checker]
+    B --> D[Coder]
+    B --> E[Human Feedback]
 
-    %% Case A: Logs
+    %% Checker path
     C -->|Logs Good| F[Success]
-    F --> B
     C -->|Logs Bad| D
 
-    %% Translation Step
+    %% Coder path
     D --> G[Translator]
     G --> B
 
-    %% Case B: User Query (UQ) loop
-    D --> G
-    G --> B
-    B --> A
-    A --> H[Logs]
-    H --> C
-    C -->|Loop until success| F
-
-    %% Case C: Human Feedback Response loop
+    %% Human Feedback path
     E --> D
-    D --> G
-    G --> B
-    B --> A
-    A --> H
-    H --> C
-    C -->|Loop until success| F
+
+    %% Loops
+    F -.-> B
+    D -.-> B
+    G -.-> B
