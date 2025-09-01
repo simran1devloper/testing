@@ -1,27 +1,27 @@
 
 ```mermaid
 flowchart TD
-    A[VS Code] --> B[Gateway]
+    %% Root
+    A[VS Code]
 
+    %% Gateway
+    A --> B[Gateway]
+
+    %% Inputs from VS Code to Gateway
     B -->|Logs| C[Checker]
-    B -->|User Query | D[Coder]
+    B -->|User Query (UQ)| D[Coder]
     B -->|Human Feedback Response| E[Coder]
-
-    C -->|Logs Good| F[Success]
-    F --> B
-    C -->|Logs Bad| D
-    D --> G[Translator]
-    G --> B
-
 
     %% Case A: Logs
     C -->|Logs Good| F[Success]
     F --> B
     C -->|Logs Bad| D
+
+    %% Translation Step
     D --> G[Translator]
     G --> B
 
-    %% Case B: User Query (UQ)
+    %% Case B: User Query (UQ) loop
     D --> G
     G --> B
     B --> A
@@ -29,7 +29,7 @@ flowchart TD
     H --> C
     C -->|Loop until success| F
 
-    %% Case C: Human Feedback Response
+    %% Case C: Human Feedback Response loop
     E --> D
     D --> G
     G --> B
