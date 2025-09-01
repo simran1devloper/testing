@@ -9,7 +9,7 @@ flowchart TD
 
     %% Inputs from VS Code to Gateway
     B -->|Logs| C[Checker]
-    B -->|User Query (UQ)| D[Coder]
+    B -->|User Query | D[Coder]
     B -->|Human Feedback Response| E[Coder]
 
     %% Case A: Logs
