@@ -13,7 +13,7 @@ C --> C4[Implementation Phase<br>Execute & monitor]
 
 C --> D[Decision Support System DSS]
 
-D --> D1[Database<br>(Data management)]
-D --> D2[Model Base<br>(Analytical tools)]
-D --> D3[User Interface<br>(Dashboards, reports)]
-D --> D4[Knowledge Base<br>(Rules & expertise)]
+D --> D1[Database<br>Data management]
+D --> D2[Model Base<br>Analytical tools]
+D --> D3[User Interface<br>Dashboards, reports]
+D --> D4[Knowledge Base<br>Rules & expertise]
