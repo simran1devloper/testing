@@ -2,18 +2,18 @@
 ```mermaid
 flowchart TD
 
-A[Amazon BI: Data Collection] --> B[Sales Drop Detected: Wireless Headphones]
+A[Business Intelligence (BI)] --> B[Effective & Timely Decisions]
 
-B --> C[Intelligence Phase<br>Problem identified: -20% sales]
-C --> D[Design Phase<br>Alternatives: Discount / Ads / Bundling]
-D --> E[Choice Phase<br>Best option: Bundling with smartphones]
-E --> F[Implementation Phase<br>Launch bundling offer]
+B --> C[Decision-Making Process]
 
-F --> G[DSS Support]
-G --> G1[Database: Sales, Competitor, Customer Data]
-G --> G2[Model Base: Forecast demand & profit]
-G --> G3[User Interface: Dashboards, reports]
-G --> G4[Knowledge Base: Past bundling success]
+C --> C1[Intelligence Phase<br>(Identify problems & gather data)]
+C --> C2[Design Phase<br>(Develop alternatives & models)]
+C --> C3[Choice Phase<br>(Select best solution)]
+C --> C4[Implementation Phase<br>(Execute & monitor)]
 
-F --> H[Effective & Timely Decision<br>Increased sales & profits]
+C --> D[Decision Support System (DSS)]
 
+D --> D1[Database<br>(Data management)]
+D --> D2[Model Base<br>(Analytical tools)]
+D --> D3[User Interface<br>(Dashboards, reports)]
+D --> D4[Knowledge Base<br>(Rules & expertise)]
