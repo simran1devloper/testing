@@ -6,10 +6,10 @@ A[Business Intelligence ] --> B[Effective & Timely Decisions]
 
 B --> C[Decision-Making Process]
 
-C --> C1[Intelligence Phase<br>(Identify problems & gather data)]
-C --> C2[Design Phase<br>(Develop alternatives & models)]
-C --> C3[Choice Phase<br>(Select best solution)]
-C --> C4[Implementation Phase<br>(Execute & monitor)]
+C --> C1[Intelligence Phase<br>Identify problems & gather data]
+C --> C2[Design Phase<br>Develop alternatives & models]
+C --> C3[Choice Phase<br>Select best solution]
+C --> C4[Implementation Phase<br>Execute & monitor]
 
 C --> D[Decision Support System DSS]
 
