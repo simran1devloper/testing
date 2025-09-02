@@ -1,29 +1,19 @@
 
 ```mermaid
 flowchart TD
-    %% Root
-    A[VS Code]
 
-    %% Gateway
-    A --> B[Gateway]
+A[Amazon BI: Data Collection] --> B[Sales Drop Detected: Wireless Headphones]
 
-    %% Main inputs from Gateway
-    B --> C[Checker]
-    B --> D[Coder]
-    B --> E[Human Feedback]
+B --> C[Intelligence Phase<br>Problem identified: -20% sales]
+C --> D[Design Phase<br>Alternatives: Discount / Ads / Bundling]
+D --> E[Choice Phase<br>Best option: Bundling with smartphones]
+E --> F[Implementation Phase<br>Launch bundling offer]
 
-    %% Checker path
-    C -->|Logs Good| F[Success]
-    C -->|Logs Bad| D
+F --> G[DSS Support]
+G --> G1[Database: Sales, Competitor, Customer Data]
+G --> G2[Model Base: Forecast demand & profit]
+G --> G3[User Interface: Dashboards, reports]
+G --> G4[Knowledge Base: Past bundling success]
 
-    %% Coder path
-    D --> G[Translator]
-    G --> B
+F --> H[Effective & Timely Decision<br>Increased sales & profits]
 
-    %% Human Feedback path
-    E --> D
-
-    %% Loops
-    F -.-> B
-    D -.-> B
-    G -.-> B
