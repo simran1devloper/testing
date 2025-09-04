@@ -1,19 +1,38 @@
 
 ```mermaid
-flowchart TD
+flowchart TB
+    %% Input Layer
+    A1[RF Spectrogram Input (Top Branch)]
+    A2[RF Spectrogram Input (Bottom Branch)]
 
-A[Business Intelligence ] --> B[Effective & Timely Decisions]
+    %% Top Branch
+    B1[RF Preprocessing]
+    B2[Temporal-Aware CNN]
+    B3[Attention Module]
+    B4[Feature Embedding]
 
-B --> C[Decision-Making Process]
+    %% Bottom Branch
+    C1[RF Preprocessing]
+    C2[Temporal-Aware CNN]
+    C3[Attention Module]
+    C4[Feature Embedding]
 
-C --> C1[Intelligence Phase<br>Identify problems & gather data]
-C --> C2[Design Phase<br>Develop alternatives & models]
-C --> C3[Choice Phase<br>Select best solution]
-C --> C4[Implementation Phase<br>Execute & monitor]
+    %% Similarity Computation and Decision
+    D[Similarity Computation Module]
+    E[Verification Decision]
 
-C --> D[Decision Support System DSS]
+    %% Connections Top Branch
+    A1 --> B1 --> B2 --> B3 --> B4 --> D
 
-D --> D1[Database<br>Data management]
-D --> D2[Model Base<br>Analytical tools]
-D --> D3[User Interface<br>Dashboards, reports]
-D --> D4[Knowledge Base<br>Rules & expertise]
+    %% Connections Bottom Branch
+    A2 --> C1 --> C2 --> C3 --> C4 --> D
+
+    %% Final Decision
+    D --> E
+
+    %% Optional: indicate shared weights
+    B1 --- C1
+    B2 --- C2
+    B3 --- C3
+    B4 --- C4
+
