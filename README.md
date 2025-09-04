@@ -2,8 +2,8 @@
 ```mermaid
 flowchart TB
     %% Input Layer
-    A1[RF Spectrogram Input (Top Branch)]
-    A2[RF Spectrogram Input (Bottom Branch)]
+    A1[RF Spectrogram Input Top Branch]
+    A2[RF Spectrogram Input Bottom Branch]
 
     %% Top Branch
     B1[RF Preprocessing]
